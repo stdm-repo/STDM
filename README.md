@@ -22,28 +22,41 @@ The codes also requires Python version 3.12.7 and the following Python packages:
 3. ```matplotlib 3.9.2```
 
 ## simulation-code
-This folder contains the codes to reproduce the full simulation results presented in Section 5 and Appendix B.1 in the paper. As the full simulation results invovles multiple competing methods, various settings, and 200 replications for each setting, the codes in Section 5.2 utilized parallel computing in order to reduce the running time. We would recommend to reproduce the full simulation results with a computing system of at least 16 cores and 500GB of storage. The following list provides the guidance for each file in the folder.
-1. Under ```Part 1``` folder, the R code will generate results for part of Section 5.2 and Appendix B.1
+This folder contains the code required to reproduce the complete simulation results presented in **Section 5** and **Appendix B.1** of the paper. As the full simulations involve multiple competing methods, various settings, and 200 replications per setting, the code for **Section 5.2** utilizes parallel computing to reduce runtime. We would recommend to reproduce the full simulation results with a computing system of at least 16 cores and 500GB of storage. The following list provides the guidance for each file in the folder.
+1. Under ```Part 1``` folder, the R code will generate results for part of Section 5.2 and Appendix B.1  
    - ```Figure 1 & Table 1 & Table B1.R``` will plot Figure 1 and generate the tables for Table 1 and Table B1. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 1```.
-2. Under ```Part 2``` folder, the R code will generate results for part of Section 5.2
-   - ```Table 2.R``` will Table 2. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 2```.
-3. Under ```Part 3``` folder, the R code will generate results for part of Section 5.3 and Appendix B.1
+
+2. Under ```Part 2``` folder, the R code will generate results for part of Section 5.2  
+   - ```Table 2.R``` will generate Table 2. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 2```.
+
+3. Under ```Part 3``` folder, the R code will generate results for part of Section 5.3 and Appendix B.1  
    - ```Table 3 & Figure 2 & Figure 3 & Table B2.R``` will plot Figure 2 and Figure 3, and generate the tables for Table 3 and Table B2. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 3```.
 
 ## real-data-code
 This folder contains the dataset and the codes to reproduce the real data analysis results presented in Section 6 and Appendix B.2 in the paper.
-1. Under ```data``` folder, it contains the orginal dataset and generated dataset for the real data analysis.
-   - ```taxi_zones``` folder contains necessary location information. The dataset is publicly avaliable at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the data file "Taxi Zone Shapefile (PARQUET)".
-   - ```combined_data.csv``` is created by ```data_combine.R```. We combined all the original data documents into one single file. The dataset is publicly avaliable at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the "Yellow Taxi Trip Records" data file in all the months from 2011 to 2019. We did not include data here since they are too large.
-   - ```location.csv``` is created by ```location_generate.py```. It contains the location IDs, longitude and latitude from ```taxi_zones```.
-   - ```mahh.csv``` is location IDs and corresponding label within 'uptown', 'midtown' and 'downtown'.
-2. ```data_combine.R``` is to generate our basic data ```combined_data.csv```. In the following codes, they will use this data to generate results.
-3. ```location_generate.py``` is to generate our location information. In the following codes, they will use this label to plot.
-4. ```p_q_compare.R``` is to generate Table 4 and Table B3.
-5. ```real_data.R``` is to plot Figure 4. It will also generate intermediate temporary data which is stored under the folder ```Results/real-data-code```.
-6. ```manhattan_plot.py``` is to plot Figure 5a from ```mahh.csv```.
-7. ```plot_figure5bc.py``` is to plot Figure 5b and Figure 5c from the data in ```real_data.R```.
-8. ```plot_figure6.py``` is to plot Figure 6 from the data in ```real_data.R```.
-9. ```appendix_real_data.R``` is to generate intermediate data for Figure B1 which is stored under the folder ```Results/real-data-code```.
-10. ```plot_figure5bc.py``` is to plot Figure 5b and Figure 5c from the data in ```real_data.R```.
-11. ```plot_appendix.py``` is to plot Figure B1 from the data in ```appendix_real_data.R```.
+
+1. Under ```data``` folder, it contains the original dataset and the generated dataset for the real data analysis.  
+   - ```taxi_zones``` folder contains the necessary location information. The dataset is publicly available at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the data file "Taxi Zone Shapefile (PARQUET)".  
+   - ```combined_data.csv``` is created by ```data_combine.R```. It combines all the original data files into a single dataset. The dataset is publicly available at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the "Yellow Taxi Trip Records" data files for all months from 2011 to 2019. We do not include the raw data here due to its large size.  
+   - ```location.csv``` is created by ```location_generate.py```. It contains location IDs, longitude, and latitude extracted from ```taxi_zones```.  
+   - ```mahh.csv``` contains location IDs and their corresponding labels: 'uptown', 'midtown', or 'downtown'.
+
+2. ```data_combine.R``` generates the basic dataset ```combined_data.csv```. The subsequent codes use this data to generate results.
+
+3. ```location_generate.py``` generates location information. The subsequent codes use these labels for plotting.
+
+4. ```p_q_compare.R``` generates Table 4 and Table B3.
+
+5. ```real_data.R``` plots Figure 4. It also generates intermediate temporary data stored under the folder ```Results/real-data-code```.
+
+6. ```manhattan_plot.py``` plots Figure 5a using data from ```mahh.csv```.
+
+7. ```plot_figure5bc.py``` plots Figure 5b and Figure 5c using data generated by ```real_data.R```.
+
+8. ```plot_figure6.py``` plots Figure 6 using data generated by ```real_data.R```.
+
+9. ```appendix_real_data.R``` generates intermediate data for Figure B1, which is stored under the folder ```Results/real-data-code```.
+
+10. ```plot_figure5bc.py``` plots Figure 5b and Figure 5c using data generated by ```real_data.R```.
+
+11. ```plot_appendix.py``` plots Figure B1 using data generated by ```appendix_real_data.R```.
