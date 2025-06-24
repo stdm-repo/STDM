@@ -31,5 +31,5 @@ cmap = cm.YlOrRd
 df1.plot(column='dis0',vmax=2*1e12,legend=True,ax=ax,cmap=cmap,edgecolor='black'
 ,legend_kwds={'label': "dis",'shrink': 0.3})
 ax.set_axis_off()
-plt.savefig('download.png', dpi=300, bbox_inches='tight')
+plt.savefig('Figure 6.png', dpi=300, bbox_inches='tight')
 plt.show()
