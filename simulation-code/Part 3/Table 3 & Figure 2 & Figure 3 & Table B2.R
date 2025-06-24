@@ -814,7 +814,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("5.png", width = 800, height = 600, res = 120)
+png("Figure 2 a.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 2(a)",cex.main = 2,cex.axis = 1.2)
 abline(v = 8,col = "red", lwd = 2)
 abline(v = 20,col = "red", lwd = 2)
@@ -832,7 +832,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("6.png", width = 800, height = 600, res = 120)
+png("Figure 2 b.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 2(b)",cex.main = 2,cex.axis = 1.2)
 abline(v = 6,col = "red", lwd = 2)
 abline(v = 30,col = "red", lwd = 2)
@@ -850,7 +850,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("7.png", width = 800, height = 600, res = 120)
+png("Figure 2 c.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 2(c)",cex.main = 2,cex.axis = 1.2)
 abline(v = 2,col = "red", lwd = 2)
 abline(v = 14,col = "red", lwd = 2)
@@ -906,7 +906,7 @@ ggplot(DF, aes(x = A, y = B, color = C, shape = as.factor(D))) +
   # Adding thick, colored horizontal and vertical lines at y=0 and x=0
   geom_hline(yintercept = 0, size = 1.5, color = "darkgreen", linetype = "dashed") +
   geom_vline(xintercept = 0, size = 1.5, color = "darkgreen", linetype = "dashed")
-ggsave("5_1.png", width = 8, height = 6, dpi = 300)
+ggsave("Figure 3 a.png", width = 8, height = 6, dpi = 300)
 
 # Case 2 b
 library(ggplot2)
@@ -945,7 +945,7 @@ ggplot(DF, aes(x = A, y = B, color = C, shape = as.factor(D))) +
   # Adding thick, colored horizontal and vertical lines at y=0 and x=0
   geom_hline(yintercept = 0, size = 1.5, color = "darkgreen", linetype = "dashed") +
   geom_vline(xintercept = 0, size = 1.5, color = "darkgreen", linetype = "dashed")
-ggsave("6_1.png", width = 8, height = 6, dpi = 300)
+ggsave("Figure 3 b.png", width = 8, height = 6, dpi = 300)
 
 
 # Case 2 c
@@ -985,7 +985,7 @@ ggplot(DF, aes(x = A, y = B, color = C, shape = as.factor(D))) +
   # Adding thick, colored horizontal and vertical lines at y=0 and x=0
   geom_hline(yintercept = 0, size = 1.5, color = "darkgreen", linetype = "dashed") +
   geom_vline(xintercept = 0, size = 1.5, color = "darkgreen", linetype = "dashed")
-ggsave("7_1.png", width = 8, height = 6, dpi = 300)
+ggsave("Figure 3 c.png", width = 8, height = 6, dpi = 300)
 
 
 ################# Appendix B table 2 #######################
