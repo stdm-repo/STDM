@@ -913,7 +913,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("1.png", width = 800, height = 600, res = 120)
+png("Figure 1 a.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 1(a)",cex.main = 2,cex.axis = 1.2)
 abline(v = 85,  col = "red", lwd = 2)
 abline(v = 163, col = "red", lwd = 2)
@@ -932,7 +932,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("3.png", width = 800, height = 600, res = 120)
+png("Figure 1 c.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 1(c)",cex.main = 2,cex.axis = 1.2)
 abline(v = 140,  col = "red", lwd = 2)
 abline(v = 313, col = "red", lwd = 2)
@@ -951,7 +951,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("2.png", width = 800, height = 600, res = 120)
+png("Figure 1 b.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 1(b)",cex.main = 2,cex.axis = 1.2)
 abline(v = 85,  col = "red", lwd = 2)
 abline(v = 163, col = "red", lwd = 2)
@@ -970,7 +970,7 @@ table_format <- t(complete_data$Count)
 colnames(table_format) <- complete_data$Number
 table_matrix <- as.matrix(table_format)
 
-png("4.png", width = 800, height = 600, res = 120)
+png("Figure 1 d.png", width = 800, height = 600, res = 120)
 barplot(table_matrix,main = "Case 1(d)",cex.main = 2,cex.axis = 1.2)
 abline(v = 140,  col = "red", lwd = 2)
 abline(v = 313, col = "red", lwd = 2)
