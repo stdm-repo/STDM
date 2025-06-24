@@ -273,7 +273,5 @@ X2=as.matrix(X2)
 tmp=est_dis(1,1,1,Y,Sj,X1,X2)
 
 write.csv(tmp$Dis,"Dis_our.csv", row.names = FALSE)
-write.csv(tmp$Dis_partial,"Dis_our_partial.csv", row.names = FALSE)
 write.csv(tmp$Dis_direct,"Dis_structure.csv", row.names = FALSE)
 write.csv(tmp$ini_Dis,"Dis_dynamic.csv", row.names = FALSE)
-write.csv(tmp$ini_Dis_partial,"Dis_dynamic_partial.csv", row.names = FALSE)
