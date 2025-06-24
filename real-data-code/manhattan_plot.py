@@ -37,5 +37,5 @@ category_labels = ['Downtown', 'Midtown', 'Uptown']
 handles = [mpatches.Patch(color=colors[i], label=category_labels[i]) for i in range(3)]
 ax.legend(handles=handles, loc='upper left', bbox_to_anchor=(0.02, 0.85), fontsize=12)
 ax.set_axis_off()
-plt.savefig('map.png', dpi=300, bbox_inches='tight')
+plt.savefig('Figure 5 a.png', dpi=300, bbox_inches='tight')
 plt.show()
