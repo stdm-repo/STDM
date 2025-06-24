@@ -34,5 +34,5 @@ This folder contains the codes to reproduce the full simulation results presente
 This folder contains the dataset and the codes to reproduce the real data analysis results presented in Section 6 and Appendix B.2 in the paper.
 1. Under ```data``` folder, it contains the orginal dataset and generated dataset for the real data analysis.
    - ```taxi_zones``` folder contains necessary location information. The dataset is publicly avaliable at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the data file "Taxi Zone Shapefile (PARQUET)".
-   - ```combined_data.csv``` is created by ```data_combine.R```. We combined all the data documents into one single file.
-   - 
+   - ```combined_data.csv``` is created by ```data_combine.R```. We combined all the original data documents into one single file. The dataset is publicly avaliable at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the "Yellow Taxi Trip Records" data file in all the months from 2011 to 2019.
+   - ```location.csv``` is created by ```location_generate.py```. It contains the 
