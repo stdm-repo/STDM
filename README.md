@@ -23,4 +23,5 @@ The codes also requires Python version 3.12.7 and the following Python packages:
 
 ## simulation-code
 This folder contains the codes to reproduce the full simulation results presented in Section 5 and Appendix B.1 in the paper. As the full simulation results invovles multiple competing methods, various settings, and 200 replications for each setting, the codes in Section 5.2 utilized parallel computing in order to reduce the running time. We would recommend to reproduce the full simulation results with a computing system of at least 16 cores and 500GB of storage. The following list provides the guidance for each file in the folder.
-1. 
+1. Under Part 1 folder, the R code will generate results for Section 5.2 and Appendix B.1
+   - ```Figure 1 & Table 1 & Table B1.R``` will plot Figure 1 and generate the tables for Table 1 and Table B1.
