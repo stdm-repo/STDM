@@ -68,3 +68,18 @@ This folder contains the dataset and the codes to reproduce the real data analys
       * For a file named like "Figure 1 X.png" file, it is Case 1(X) in the paper.
       * ```table1.csv``` records the number in Table 1 in the paper.
       * ```tableB1.csv``` records the number in Table B.1 in the paper.
+   - Under ```Part 2``` folder
+      * For a file named like "N_M_OUR.rds" file, it records the intermediate data from ```Table 2.R```. It means N locations and M time points by OUR method.
+      * For a file named like "N_M_No_Dynamic.rds" file, it records the intermediate data from ```Table 2.R```. It means N locations and M time points by No-Dynamic method.
+      * For a file named like "N_M_No_Structure.rds" file, it records the intermediate data from ```Table 2.R```. It means N locations and M time points by No-Structure method.
+      * ```table2.csv``` records the number in Table 2 in the paper.
+   - Under ```Part 3``` folder
+      * For a file named like "N_M.rds" file, it records spatial change points as the intermediate data from ```Table 3 & Figure 2 & Figure 3 & Table B2.R```. It means N locations and M time points.
+      * For a file named like "N_M_Dis.rds" file, it records Dis values as the intermediate data from ```Table 3 & Figure 2 & Figure 3 & Table B2.R```. It means N locations and M time points.
+      * For a file named like "N_M_Sj.rds" file, it records Sj values as the intermediate data from ```Table 3 & Figure 2 & Figure 3 & Table B2.R```. It means N locations and M time points.
+      * For a file named like "N_M_rand.rds" file, it records ARI as the intermediate data from ```Table 3 & Figure 2 & Figure 3 & Table B2.R```. It means N locations and M time points.
+      * For a file named like "N_M_run.rds" file, it records running time as the intermediate data from ```Table 3 & Figure 2 & Figure 3 & Table B2.R```. It means N locations and M time points.
+      * For a file named like "Figure 2 X.png" file, it is Case 2(X) in the paper.
+      * For a file named like "Figure 3 X.png" file, it is Case 3(X) in the paper.
+      * ```table3.csv``` records the number in Table 3 in the paper.
+      * ```tableB2.csv``` records the number in Table B.2 in the paper.
