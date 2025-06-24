@@ -300,4 +300,4 @@ ggplot(melt_data, aes(x = Var2, y = Var1, fill = value)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   labs(x = "5 Factors", y = "Locations")
 
-ggsave("real_2.png", width = 8, height = 6, dpi = 300)
+ggsave("Figure 4.png", width = 8, height = 6, dpi = 300)
