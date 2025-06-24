@@ -32,6 +32,12 @@ This folder contains the code required to reproduce the complete simulation resu
 3. Under ```Part 3``` folder, the R code will generate results for part of Section 5.3 and Appendix B.1  
    - ```Table 3 & Figure 2 & Figure 3 & Table B2.R``` will plot Figure 2 and Figure 3, and generate the tables for Table 3 and Table B2. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 3```.
 
+## simulation-demo
+This folder contains the three demos to run the simulation examples introduced in ```simulation-code```. By default, each demo will run every setting of that model for one replication for illustration purpose. The user can change the value of ```replication_time``` to specify the desired number of replications. 
+1. ```Part 1.R``` is for ```Part 1``` in ```simulation-code```.
+2. ```Part 2.R``` is for ```Part 2``` in ```simulation-code```.
+3. ```Part 3.R``` is for ```Part 3``` in ```simulation-code```.
+
 ## real-data-code
 This folder contains the dataset and the codes to reproduce the real data analysis results presented in Section 6 and Appendix B.2 in the paper.
 
