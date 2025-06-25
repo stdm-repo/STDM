@@ -102,3 +102,9 @@ This folder contains the dataset and the codes to reproduce the real data analys
    - ```appendix_full_time.png``` file, it is Figure B.1 in the paper.
    - ```table4.csv``` records the number in Table 4 in the paper.
    - ```tableB3.csv``` records the number in Table B.3 in the paper.
+
+## wrapper-code
+This folder contains a single wrapper file with a main script that sequentially runs each simulation section of the analyses presented in the paper, generating the figures and tables as they appear in the text.
+
+1. ```rep_main.R``` will sequentially runs each section of the analyses presented in the paper, generating the figures and tables as they appear in the text.
+2. ```Part 1```, ```Part 2``` and ```Part 3``` folders have the same definiton as ```simulation-code``` part.
