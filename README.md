@@ -23,13 +23,13 @@ The codes also requires Python version 3.12.7 and the following Python packages:
 
 ## simulation-code
 This folder contains the code required to reproduce the complete simulation results presented in **Section 5** and **Appendix B.1** of the paper. As the full simulations involve multiple competing methods, various settings, and 200 replications per setting, the code for **Section 5.2** utilizes parallel computing to reduce runtime. We would recommend to reproduce the full simulation results with a computing system of at least 16 cores and 500GB of storage. The following list provides the guidance for each file in the folder.
-1. Under ```Part 1``` folder, the R code will generate results for part of Section 5.2 and Appendix B.1  
+1. Under ```Part 1``` folder, the R code will generate some results in Section 5.2 and some computational cost results in Appendix B.1  
    - ```Figure 1 & Table 1 & Table B1.R``` will plot Figure 1 and generate the tables for Table 1 and Table B1. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 1```.
 
-2. Under ```Part 2``` folder, the R code will generate results for part of Section 5.2  
+2. Under ```Part 2``` folder, the R code will generate the rest results in Section 5.2  
    - ```Table 2.R``` will generate Table 2. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 2```.
 
-3. Under ```Part 3``` folder, the R code will generate results for part of Section 5.3 and Appendix B.1  
+3. Under ```Part 3``` folder, the R code will generate the results in Section 5.3 and the rest results computational cost results in Appendix B.1  
    - ```Table 3 & Figure 2 & Figure 3 & Table B2.R``` will plot Figure 2 and Figure 3, and generate the tables for Table 3 and Table B2. It will also generate intermediate temporary data which is stored under the folder ```Results/Simulation-code/Part 3```.
 
 ## simulation-demo
