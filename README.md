@@ -41,9 +41,9 @@ This folder contains the three demos to run the simulation examples introduced i
 ## real-data-code
 This folder contains the dataset and the codes to reproduce the real data analysis results presented in Section 6 and Appendix B.2 in the paper.
 
-1. Under ```data``` folder, it contains the original dataset and the generated dataset for the real data analysis.  
+1. Under ```data``` folder, it contains the raw dataset and the cleaned dataset for the real data analysis.  
    - ```taxi_zones``` folder contains the necessary location information. The dataset is publicly available at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the data file "Taxi Zone Shapefile (PARQUET)".  
-   - ```combined_data.csv``` is created by ```data_combine.R```. It combines all the original data files into a single dataset. The dataset is publicly available at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the "Yellow Taxi Trip Records" data files for all months from 2011 to 2019. We do not include the raw data here due to its large size.  
+   - ```combined_data.csv``` is created by ```data_combine.R```. It combines all the raw data files into a single dataset. The dataset is publicly available at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the "Yellow Taxi Trip Records" data files for all months from 2011 to 2019. We do not include the original data here due to its large volume.  
    - ```location.csv``` is created by ```location_generate.py```. It contains location IDs, longitude, and latitude extracted from ```taxi_zones```.  
    - ```mahh.csv``` contains location IDs and their corresponding labels: 'uptown', 'midtown', or 'downtown'.
 
