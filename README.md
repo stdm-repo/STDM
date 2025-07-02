@@ -39,7 +39,7 @@ This folder contains the three demos to run the simulation examples introduced i
 3. ```Part 3.R``` is for ```Part 3``` in ```simulation-code```.
 
 ## real-data-code
-This folder contains the dataset and the codes to reproduce the real data analysis results presented in Section 6 and Appendix B.2 in the paper.
+This folder contains the dataset and the codes to reproduce the real data analysis results presented in Section 5.4 and Appendix B.2 in the paper.
 
 1. Under ```data``` folder, it contains the raw dataset and the cleaned dataset for the real data analysis.  
    - ```taxi_zones``` folder contains the necessary location information. The dataset is publicly available at [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Please download the data file "Taxi Zone Shapefile (PARQUET)".  
